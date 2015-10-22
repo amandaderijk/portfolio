@@ -4,9 +4,15 @@ body {
 }
 header, footer{
 	background-color: #2C3E50;
-	height: 10vh;
 	color: #fff;
 	text-align: center;
+}
+
+header{
+	height: 11vh;
+}
+footer{
+	height: 5vh;
 }
 
 section {
@@ -42,18 +48,19 @@ header{
 }
 
 	.logo{
-		margin: 1.5% 2%;
+		margin: 1% 2%;
 		float: left;
 	}
 
 	.main-menu{
 		float:right;
-		margin: 1.5%;
+		margin: 1%;
 		padding-top: 1%;
 	}
 	.main-menu a{
 		color: #fff;
 		text-decoration: none;
+	border-bottom: 1px solid #b2b2b2;
 	}
 
 #about, #experiences{
@@ -61,11 +68,17 @@ header{
 	color: #fff;
 }
 
+#portfolio h2, #contact h2{
+	color: #2C3E50;
+}
+
+/* about section */
 	img.amanda {
 	    width: 150px;
 	    padding-top: 8%; 
 	}
 
+/* portfolio section */
 	.portfolio-menu a{
 		display: inline-block;
 	}
@@ -79,6 +92,7 @@ header{
 		margin-right: 5%;
 	}
 
+/* experiences section */
 	.experience-item{
 		height: 130px;
 		clear: both;
@@ -112,8 +126,33 @@ header{
 		align-self: center;
 		margin-left: 45.7%;
 	}
+/* contact section */
+form {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
 
+input, textarea{
+	width: 60%;
+	height: 55px;
+	border:none;
+	border-bottom: 1px solid #b2b2b2;
+	font-size: 15px;  
+}
 
+textarea{
+	padding-top: 35px;
+}
+
+.formBtn{
+	height: 40px;
+	width: 20%;
+	margin-top: 25px;
+	background-color: #F4A13E; 
+	color: #fff;
+	text-transform: uppercase;
+}
 
 
 
