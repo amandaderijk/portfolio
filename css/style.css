@@ -1,0 +1,128 @@
+body {
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+header, footer{
+	background-color: #2C3E50;
+	height: 10vh;
+	color: #fff;
+	text-align: center;
+}
+
+section {
+	height: 550px;
+	text-align: center;
+	padding: 5%;
+}
+
+ul li{
+	display: inline;
+	padding: 5px;
+	}
+
+h1{
+	font-weight: 900;
+	font-size: 40px;
+}
+h2{
+	font-weight: 800;
+	font-size: 30px;
+	padding-top: 0;
+	text-transform: uppercase;
+}
+h3{
+	font-weight: 600;
+	font-size: 25px;
+}
+
+header{
+	width: 100%;
+	position: fixed;
+	color: #fff;
+}
+
+	.logo{
+		margin: 1.5% 2%;
+		float: left;
+	}
+
+	.main-menu{
+		float:right;
+		margin: 1.5%;
+		padding-top: 1%;
+	}
+	.main-menu a{
+		color: #fff;
+		text-decoration: none;
+	}
+
+#about, #experiences{
+	background-color: #F4A13E;
+	color: #fff;
+}
+
+	img.amanda {
+	    width: 150px;
+	    padding-top: 8%; 
+	}
+
+	.portfolio-menu a{
+		display: inline-block;
+	}
+
+	.item{
+		width: 40%;
+		float: left;
+	}
+
+	.links{
+		margin-right: 5%;
+	}
+
+	.experience-item{
+		height: 130px;
+		clear: both;
+		display: flex;
+  		justify-content: center;
+	}
+
+	.left{
+		width: 40%;
+		float: left;
+		margin-left: -50%;
+		align-self: center;
+		text-align: right;
+	}
+
+	.experience-icon{
+		float: left;
+		margin-left: 9%;
+		align-self: center;
+	}
+
+	.right{
+		float: left;
+		width: 40%;
+		margin-left: 9%;
+		text-align: left;
+	}
+
+	.experience-icon-left{
+		float: left;
+		align-self: center;
+		margin-left: 45.7%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
