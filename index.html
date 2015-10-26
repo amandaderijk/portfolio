@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Amanda de Rijk | Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,800,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-	<header id="home"> 
+	<header> 
 		<a href="#home"><img class="logo" src="images/logo.png" alt="logo"></a>
 		<nav class="main-menu">
 			<ul>
@@ -22,73 +23,56 @@
 
 	<section id="about" >
 		<img class="amanda" src="images/amanda.jpg" alt="amanda">
-		<h1>Media designer &amp; front-end developer</h1>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+		<h1>Media designer<br>&amp;<br>front-end developer</h1>
+		<p class="about-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
 		</p>
 	</section>
 
 	<section id="portfolio">  
 		<h2>Portfolio</h2>
-		<div class="portfolio-menu">
-		<nav>
-			<ul>
-				<li><a href="">category1</a></li>
-				<li><a href="">category2</a></li>
-				<li><a href="">category3</a></li>
-				<li><a href="">category4</a></li>
-			</ul>
-		</nav>
+		<p> a selection of my latest work</p>
 		</div>
-		<div class"portfolio-items">
-			<div class="item links">item 1</div>
-			<div class="item">item 2</div>
-			<div class="item links">item 3</div>
-			<div class="item">item 4</div>
+		<div class="portfolio-items">
+			<a class="item" href="#about"><img class="portfolioImg" src="images/albertslow.jpg"><h4>Albert slow</h4></a>
+			<a class="item" href="#about"><img class="portfolioImg" src="images/albertslow.jpg"><h4>Albert slow</h4></a>
+			<a class="item" href="#about"><img class="portfolioImg" src="images/albertslow.jpg"><h4>Albert slow</h4></a>
+		</div>
+		<div  class="portfolioBtn">
+		<a href=""><h3>Check out more..</h3></a>
 		</div>
 	</section>
 
 	<section id="experiences">
 		<h2>Experiences</h2>
 		<div class="experience-item">
-			<div class="left">
-				<h3>Competa IT</h3>
-				<p>Bootcamp front-end developer<br>october 2015 - present</p>
-			</div>
-			<img class="experience-icon" src="images/experience.png" alt="experience-icon">
+			<h3>Competa IT</h3>
+			<p>Bootcamp front-end developer<br>october 2015 - present</p>
 		</div>
-		<div class="experience-item">
-			<img class="experience-icon-left" src="images/experience.png" alt="experience-icon">
-	        <div class="text right">
-	            <h3>Communication &amp; Media Design, Hogeschool Utrecht</h3>
-	            <p>Bachelor degree<br>september 2011 - september 2015</p>
-	        </div>
-	    </div>
-		<div class="experience-item">
-		    <div class="left">
+        <div class="experience-item right">
+            <h3>Communication &amp; Media Design</h3>
+            <p>Hogeschool Utrecht<br>september 2011 -august 2015</p>
+        </div>
+        <div class="experience-item">
             <h3>Brekz International B.V.</h3>
             <p>Webdesign &amp; online marketing<br>february 2015 - august 2015</p>
         </div>
-       		<img class="experience-icon" src="images/experience.png" alt="experience-icon">
-   	 	</div>
-   	 	<div class="experience-item">
-			<img class="experience-icon-left" src="images/experience.png" alt="experience-icon">
-	        <div class="right">
-	            <h3>Social Brothers</h3>
-	            <p>Webdesign &amp; video animatie<br>january 2014 - march 2015</p>
-	        </div>
-	    </div>
+        <div class="experience-item right">
+            <h3>Social Brothers</h3>
+            <p>Webdesign &amp; video animation<br>january 2014 - march 2015</p>
+        </div>
 	</section>
+
 	<section id="contact">
 		<h2>Please don't hesistate to ask a question!</h2>
 		<form>
- 			<input type="text" name="name" placeholder ="name"><br>
-  			<input type="email" name="email" placeholder ="email"><br>
-  			<input type="text" name="subject" placeholder ="subject"><br>
-  			<textarea placeholder ="message"></textarea><br>
+ 			<input type="text" name="name" placeholder ="name">
+  			<input type="email" name="email" placeholder ="email">
+  			<input type="text" name="subject" placeholder ="subject">
+  			<textarea placeholder ="message"></textarea>
 		</form>
 		<input class="formBtn"type="submit" value="send">
 	</section>
 
-	<footer>Copyright &copy; 2015 - Amanda de Rijk</footer>
+	<footer><div class="footertext"> Copyright &copy; 2015 - Amanda de Rijk</div></footer>
 </body>
 </html>
