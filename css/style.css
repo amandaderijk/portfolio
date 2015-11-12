@@ -18,7 +18,7 @@ header, footer{
 	}
 
 section {
-	height: 65vh;
+	height: 69vh;
 	padding: 7% 5%;
 }
 
@@ -31,6 +31,7 @@ h1{
 	font-weight: 900;
 	font-size: 50px;
 	text-transform: uppercase;
+	border-bottom: solid 3px white;
 }
 h2{
 	font-weight: 800;
@@ -54,6 +55,10 @@ h4{
 #about, #experiences{
 	background-color: #F4A13E;
 	color: #fff;
+}
+#skills{
+	background-color: #ecf0f1;
+	color: #2c3e50;
 }
 /*header*/
 	.logo{
@@ -82,28 +87,32 @@ h4{
 
 /* about section */
 	#about{
-	    padding-top: 220px;
-	    height: 64vh;
+	    padding-top: 150px;
+	    height: 69vh;
 	}
 	img.amanda {
 		border-radius: 50%;
    		width: 220px;
 	}
+	.about-title{
+		width: 60%;
+		margin-left: 20%;
+		padding-bottom: 20px;
+	}
 	.about-text{
 		width: 60%;
 		margin-left: 20%;
-		padding-top: 15px;
+		text-align: justify;
 	}
 
 /* portfolio section */
-	.portfolio-items{
+/*	.portfolio-items{
 		width: 80%;
 		margin-left: 10%;
 	}
 	.portfolio-items a{
 		text-decoration:none; 
 	}
-
 	.item{
 		width: 32%;
 	    float: left;
@@ -113,23 +122,51 @@ h4{
 		max-width:100%;
 		max-height:100%;
 	}
-
 	.portfolio-btn{
 		float: left;
 		width: 100%;
 		margin-top: 15px;
 	}
-
 	.portfolio-btn a{
 		color: #2C3E50;
 		text-decoration: none;
 	}
-
 	.portfolio-btn a:hover{
 		color: #F4A13E;
 		text-decoration: none;
 	}
-
+*/
+	
+/* skill section */
+	.skill-items{
+		width: 80%;
+		height: 65%;
+		margin: 0 auto;
+		text-align: left;
+		color: #2c3e50;
+	}
+	.skill-items p{
+		margin-left: 10px;
+	}
+	.skill{
+		width:45%;
+		height:50px;
+		margin: 1% 0;
+		background-color: #2c3e50; 
+	}
+	.skill-left{
+		float: left;
+	}
+	.skill-right{
+		float: right;
+	}
+	.filling{
+		width: 80%;
+		height: 29px;
+		margin: 8px 0px 8px 9px;
+		padding: 6px 0px 0px 10px;
+		background-color:  #bdc3c7;
+	}
 /* experiences section */
 	.experience-item{
 	    height: 120px;
@@ -156,41 +193,132 @@ h4{
 	}
 
 /* contact section */
-form {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-input, textarea{
-	width: 60%;
-	height: 55px;
-	border: none;
-	border-bottom: 1px solid #b2b2b2;
-	font-size: 15px;  
-	display: block;
-	margin-left: 20%;
-	padding-left: 20px;
-	outline: none;
-}
-
-textarea{
-	padding-top: 35px;
-}
-
-	.form-btn{
-		height: 40px;
-		width: 20%;
-		margin-top: 25px;
-		background-color: #F4A13E; 
-		color: #fff;
-		text-transform: uppercase;
-		margin-left: 40%;
-		border: none;
+#contact{
+	height: 66vh;
 	}
+	form {
+	    width: 100%;
+	    margin-bottom: 10px;
+	}
+	input, textarea{
+		width: 60%;
+		height: 55px;
+		border: none;
+		border-bottom: 1px solid #b2b2b2;
+		font-size: 15px;  
+		display: block;
+		margin-left: 20%;
+		padding-left: 20px;
+		outline: none;
+	}
+	textarea{
+		padding-top: 35px;
+	}
+		.form-btn{
+			height: 40px;
+			width: 20%;
+			margin-top: 25px;
+			background-color: #F4A13E; 
+			color: #fff;
+			text-transform: uppercase;
+			margin-left: 40%;
+			border: none;
+		}
 
 /*portfolio item selected*/
 	.portfolio-selected{
 		padding-top: 80px;
 		min-height: 85vh;
 	}
+
+
+
+
+
+
+
+
+
+/* css lightbox try */
+#portfolio- a {
+   text-decoration:none;
+   }
+ 
+#gallery .item {
+   width: 200px; height: 200px; overflow: hidden;
+   float: left;
+   border: 5px solid #333;
+   margin: 5px;
+   }
+ 
+#gallery .item a {
+    overflow: hidden;
+   }
+ 
+#gallery .item a img {
+   height: 100%;
+   align-self: center;
+   }
+ 
+.lightbox {
+   /** Hide the lightbox */
+   opacity: 0;
+ 
+   /** Apply basic lightbox styling */
+   position: fixed;
+   z-index: 9999;
+   width: 100%;
+   height: 100%;
+   top: -100%;
+   left: 0;
+   color:#333333;
+   -webkit-transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -o-transition: opacity .5s ease-in-out;
+   transition: opacity .5s ease-in-out;
+   }
+ 
+.lightbox:target {
+    /** Show lightbox when it is target */
+   opacity: 1;
+   outline: none;
+   top: 0;
+}
+ 
+.lightbox .box {
+     width: -webkit-min-content;
+     width: -moz-min-content;
+     width: min-content;
+   min-width:500px;
+    margin: 2% auto;
+   padding:10px 20px 10px 20px;
+   background-color:#FFF;
+   box-shadow: 0px 1px 26px -3px #777777;
+   }
+ 
+.lightbox .title {
+   margin:0;
+   padding:0 0 10px 0px;
+   border-bottom:1px #ccc solid;
+   font-size:22px;
+   }
+ 
+.lightbox .content {
+   display:block;
+   position:relative;
+   }
+ 
+.lightbox .close {
+   display:block;
+   float:right;
+   text-decoration:none;
+   font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size:22px;
+   color:#858585;
+   }
+ 
+.clear {
+   display:block;
+   clear:both;
+   }
 	
