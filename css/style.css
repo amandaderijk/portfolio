@@ -12,13 +12,13 @@ header, footer{
 		position: fixed;
 	}
 	footer{
-		height: 25px;
+		height: 30px;
 		bottom: 0;
 		width: 100%;
 		}	
 section {
-	height: 69vh;
-		padding: 7% 5%;
+	height: 76vh;
+	padding: 5% 0;
 	}
 ul li{
 	display: inline;
@@ -84,7 +84,7 @@ h4{
 /* about section */
 	#about{
 	    padding-top: 150px;
-	    height: 69vh;
+	    height: 73vh;
 	}
 	img.amanda {
 		border-radius: 50%;
@@ -121,10 +121,10 @@ h4{
 	}
 
 /* skill section */
-.skills-animation { @keyframes skills {
+@keyframes skills {
   from {width: 0%}
   to {width: 80%}
-} }
+}
 	.skill-items{
 		width: 80%;
 		height: 50%;
@@ -154,37 +154,44 @@ h4{
 		margin: 8px 0px 8px 9px;
 		padding: 6px 0px 0px 10px;
 		background-color:  #F4A13E;
-		animation: skills 4s;
-		animation-timing-function: ease-in;
+		animation-name: skills;
+		animation-duration: 4s;
 	}
 /* experiences section */
 	.experience-item{
-	    height: 120px;
-	    width: 365px;
-	    float: left;
-	    background-image: url("../images/experience.png");
-	    background-repeat: no-repeat;
-	    background-size: 50px;
+	    height: 137px;
+	    width: 100%;
 	}
 	.left{
+		width: 45%;
+		padding-right: 2%;
+		float: left;
 		text-align: right;
-		margin-left: 230px;
-	    padding-right: 80px;
-	    background-position: 392px -14px;
+		display: inline;
 	}
 	.right{
+		width: 47.5%;
+		padding-left: 2%;
 		text-align: left;
-	    margin-left: 48%;
-	    padding-left: 80px;
-	    background-position: 0px -14px;
+		float: right;
+		display: inline;
 	}
-	.last-item{
-		padding-bottom: 25px;
+	.experience-icon{
+		float: left;
+		display: inline;
+		width: 50px;
+		height: auto;
 	}
-
+	.experience-icon-r{
+		float: left;
+		display: inline;
+		margin-left: 47%;
+		width: 50px;
+		height: auto;
+	}
 /* contact section */
 #contact{
-	height: 66vh;
+	height: 73vh;
 	}
 	form {
 	    width: 100%;
@@ -214,6 +221,11 @@ h4{
 			margin-left: 40%;
 			border: none;
 		}
+
+/* footer section */
+.footer-text{
+	padding-top: 4px;
+}
 /* css lightbox try */  
 .lightbox {   
    opacity: 0;/* Hide the lightbox */
