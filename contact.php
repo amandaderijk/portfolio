@@ -10,4 +10,4 @@ $subject = 'New message send via amandaderijk.nl';
 mail ($to, $subject, $message, "From: " . $name);
 echo "Thanks! I will reply as soon as possible!";
 ?>
-<div>
+</div>

@@ -69,7 +69,7 @@
 	<section id="skills">
 		<h2>Skills</h2>
 		<div class="skill-items">
-			<div class="skill skill-left"><div class="filling"><span>Illustrator</span></div></div>
+			<div class="revealOnScroll skill-left"><div class="filling"><span>Illustrator</span></div></div>
 			<div class="skill skill-right"><div class="filling"><span>HTML5</span></div></div>
 			<div class="skill skill-left"><div class="filling"><span>Photoshop</span></div></div>
 			<div class="skill skill-right"><div class="filling"><span>CSS3</span></div></div>
@@ -114,15 +114,20 @@
 
 	<section id="contact" class="contact-form">
 		<h2 class="blue">Please don't hesistate to ask a question!</h2>
-		<form action="contact.php">
- 			<input type="text" name="name" placeholder ="name">
-  			<input type="email" name="email" placeholder ="email">
-  			<input type="text" name="subject" placeholder ="subject">
-  			<textarea placeholder ="message"></textarea>
+		<form action="contact.php" id="contact-form">
+ 			<input type="text" id="name"  name="name" placeholder ="name" onblur="checkName()">
+  			<input type="email" id="email"  name="email" placeholder ="email" onblur="checkEmail()">
+  			<input type="text" id="subject" name="subject" placeholder ="subject" onblur="checkSubject()">
+  			<textarea id="message" placeholder ="message" onblur="checkMessage()"></textarea>
 		</form>
-		<input class="form-btn"type="submit" value="send">
+		<div id="feedback" class="feedback">You forgot to fill in your full name</div>
+		<div id="feedback-email" class="feedback">You forgot to fill in your email</div>
+		<div id="feedback-subject" class="feedback">You have to fill in a subject</div>
+		<div id="feedback-message" class="feedback">You have to fill in a message</div>
+		<input id="submit" class="form-btn" type="submit" value="send" disabled>
 	</section>
 
-	<footer><div class="footer-text">Copyright &copy; 2015 - Amanda de Rijk<div></footer>
+	<footer><div class="footer-text">Copyright &copy; 2016 - Amanda de Rijk<div></footer>
+	<script type="text/javascript" src="formvalidation.js"></script>
 </body>
 </html>
