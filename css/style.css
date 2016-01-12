@@ -74,12 +74,12 @@ h4{
 		color: #F4A13E;
 		text-decoration: none;
 	}
-	/*hier is js voor nodig vanwege de anchors
+	
 	.main-menu li a:active{
 		color: #fff;
 		text-decoration: none;
 		border-bottom: 2px solid #F4A13E;
-	}*/
+	}
 
 /* about section */
 	#about{

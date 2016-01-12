@@ -6,7 +6,7 @@ var validateName,
 
 function checkName(){
 	var name = document.getElementById("name").value;
-	if (name.match(/^(([a-zA-Z]*)\s([a-zA-Z]*))*$/)) {
+	if (name.match(/^(([a-zA-Z]*)\s([a-zA-Z]*))*$/) && name > "") {
 		document.getElementById("feedback").style.display = "none";
 		document.getElementById("name").className = "completed-input";
 		validateName = true;
