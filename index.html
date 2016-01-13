@@ -1,7 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<title>Amanda de Rijk | Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,800,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="img/ico" href="images/favicon.png">
 </head>
+
 <body>
+	<header> 
+		<a href="#home"><img class="logo" src="images/logo.png" alt="logo"></a>
+		<nav class="main-menu" id="main-menu">
+			<ul>
+				<li><a class="active" href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#experiences">Experiences</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="about" >
+		<img class="amanda" src="images/amanda.jpg" alt="amanda">
+		<h1 class="about-title">Hi there, I'm Amanda!</h1>
+		<p class="about-text">I am a recently graduated Communication &amp; Media designer with a focus on webdesign, illustration and video animation. At this moment I'm participating in the Competa IT Bootcamp to become a full front-end webdeveloper. Besides my design skills I'm also familiar with the basics of HTML5, CSS3 and SCSS.</p> 
+		<p class="about-text">
+			I'm a small-town girl, currently living in the big city. At my free time I'm always busy trying out new recepes, searching for new dream destinations or meeting with friends. Another thing I love to do is indoor climbing. I'm a very social person, I like being surrounded with people and love to learn from everybody.</p>
+		<p>Interested? Please folow me!<br>
+			<a class="social" href="https://nl.linkedin.com/in/amandaderijk"><img src="images/.jpg" alt="linkedin"></a>
+			<a class="social" href="https://www.facebook.com/amanda.derijk"><img src="images/.jpg" alt="facebook"></a>
+			</p>
+	</section>
+
+	<section id="portfolio">  
+		<h2 class="blue">Portfolio</h2>
+		<p> selected work from 2013-2015</p>
+		</div>
+		<div class="portfolio-items">
+			<a class="item" href="#albertslow"><img class="portfolio-img" src="images/albertslow.jpg"></a>
+			<a class="item" href="#test1"><img class="portfolio-img" src="images/albertslow.jpg"></a>
+			<a class="item" href="#albertslow3"><img class="portfolio-img" src="images/albertslow.jpg"></a>
+		</div>
+		<div class="lightbox" id="albertslow">
+			<div class="box box-albertslow">
+				<div class="content">
+					<a class="prev" href="#test1">PREVIOUS</a>
+					<a class="close" href="#portfolio">X</a>
+			      	<div class="lightbox-text">Lorem ipsum dolor sit amet</div>
+			      	<a class="next" href="#test1">NEXT</a>
+			    </div>
+			</div>
+		</div>
+		<div class="lightbox" id="test1">
+			<div class="box box-test">
+				<div class="content">
+					<a class="prev" href="#albertslow">PREVIOUS</a>
+					<a class="close" href="#portfolio">X</a>
+			      	<div class="lightbox-text">Lorem ipsum dolor sit amet</div>
+			      	<a class="next" href="#albertslow">NEXT</a>
+			    </div>
+			</div>
+		</div>
+	</section>
+
+	<section id="skills">
+		<h2>Skills</h2>
+		<div class="skill-items">
+			<div class="revealOnScroll skill-left"><div class="filling"><span>Illustrator</span></div></div>
+			<div class="skill skill-right"><div class="filling"><span>HTML5</span></div></div>
+			<div class="skill skill-left"><div class="filling"><span>Photoshop</span></div></div>
+			<div class="skill skill-right"><div class="filling"><span>CSS3</span></div></div>
+			<div class="skill skill-left"><div class="filling"><span>Indesign</span></div></div>
+			<div class="skill skill-right"><div class="filling"><span>SASS</span></div></div>
+			<div class="skill skill-left"><div class="filling"><span>After Effects</span></div></div>
+			<div class="skill skill-right"><div class="filling"><span>Wordpress</span></div></div>
+		</div>
+	</section>
+
+	<section id="experiences">
+		<h2 class"blue">Experiences</h2>
+		<div class="experience-item">
+			<div class="left">
+				<h3>Competa IT</h3>
+				<p>Bootcamp front-end developer<br>october 2015 - present</p>
+			</div>
+			<img class="experience-icon" src="images/experience.png" alt="experience-icon">
+		</div>
+		<div class="experience-item">
+			<img class="experience-icon-r" src="images/experience.png" alt="experience-icon">
+			<div class="right">
+				<h3>Communication &amp; Media Design</h3>
+				<p>Hogeschool Utrecht<br>september 2011 -august 2015</p>
+			</div>
+		</div>
+		<div class="experience-item">
+			<div class="left">
+				<h3>Brekz International B.V.</h3>
+           		<p>Webdesign &amp; online marketing<br>february 2015 - august 2015</p>
+			</div>
+			<img class="experience-icon" src="images/experience.png" alt="experience-icon">
+		</div>
+		<div class="experience-item">
+			<img class="experience-icon-r" src="images/experience.png" alt="experience-icon">
+			<div class="right">
+				<h3>Social Brothers</h3>
+            	<p>Webdesign &amp; video animation<br>january 2014 - march 2015</p>
+			</div>
+		</div>
+	</section>
+	<section id="contact" class="contact-form">
+		<h2 class="blue">Please don't hesistate to ask a question!</h2>
+		<form action="contact.php" method="post" id="contact-form">
+ 			<input type="text" id="name"  name="name" placeholder ="name" onblur="checkName()">
+  			<input type="email" id="email"  name="email" placeholder ="email" onblur="checkEmail()">
+  			<input type="text" id="subject" name="subject" placeholder ="subject" onblur="checkSubject()">
+  			<textarea id="message" placeholder="message" name="message" onkeyup="checkMessage()"></textarea>
+			<div id="feedback" class="feedback">You forgot to fill in your full name</div>
+			<div id="feedback-email" class="feedback">You forgot to fill in your email</div>
+			<div id="feedback-subject" class="feedback">You have to fill in a subject</div>
+			<div id="feedback-message" class="feedback">You have to fill in a message</div>
+			<input id="submit" class="form-btn" type="submit" value="send" disabled>
+		</form>
+	</section>
+
+	<footer><div class="footer-text">Copyright &copy; 2016 - Amanda de Rijk<div></footer>
+	<script type="text/javascript" src="formvalidation.js"></script>
 </body>
 </html>

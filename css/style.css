@@ -1,0 +1,319 @@
+body{
+	text-align: center;
+	}
+
+header, footer{
+	background-color: #2C3E50;
+	color: #fff;
+	}
+	header{
+		height: 50px;
+		width: 100%;
+		position: fixed;
+	}
+	footer{
+		height: 30px;
+		bottom: 0;
+		width: 100%;
+		}	
+section {
+	height: 76vh;
+	padding: 5% 0;
+	}
+ul li{
+	display: inline;
+	padding: 5px;
+	}
+h1{
+	font-weight: 900;
+	font-size: 50px;
+	text-transform: uppercase;
+	border-bottom: solid 3px white;
+	}
+h2{
+	font-weight: 800;
+	font-size: 40px;
+	padding-top: 0;
+	text-transform: uppercase;
+	margin-top: 0;
+	}
+	.blue {
+		color: #2c3e50;
+	}
+h3{
+	font-weight: 600;
+	font-size: 25px;
+	}
+h4{
+	color: #F4A13E;
+	font-size: 20px;
+	}
+#about, #experiences{
+	background-color: #F4A13E;
+	color: #FFF;
+	}
+#skills{
+	background-color: #ecf0f1;
+	color: #2c3e50;
+	}
+/*header*/
+	.logo{
+		margin: 1% 2%;
+		float: left;
+		width: 150px;
+	}
+	.main-menu{
+		float:right;
+		margin: 0 1%;
+	}
+	.main-menu a{
+		color: #fff;
+		text-decoration: none;
+	}
+	.main-menu a:hover{
+		color: #F4A13E;
+		text-decoration: none;
+	}
+	
+	.main-menu li a:active{
+		color: #fff;
+		text-decoration: none;
+		border-bottom: 2px solid #F4A13E;
+	}
+
+/* about section */
+	#about{
+	    padding-top: 150px;
+	    height: 73vh;
+	}
+	img.amanda {
+		border-radius: 50%;
+   		width: 220px;
+	}
+	.about-title{
+		width: 60%;
+		margin-left: 20%;
+		padding-bottom: 20px;
+	}
+	.about-text{
+		width: 60%;
+		margin-left: 20%;
+	}
+
+/* portfolio section */
+	.portfolio-items{
+		width: 80%;
+		margin-left: 10%;
+		overflow: hidden;
+	}
+	.portfolio-items a{
+		text-decoration:none; 
+	}
+	.item{
+		width: 32%;
+	    float: left;
+	    margin: 25px 5px 0 5px;
+	    overflow: hidden;
+	}
+	img.portfolio-img{
+		max-width:100%;
+		max-height:100%;
+	}
+
+/* skill section */
+@keyframes skills {
+  from {width: 20%}
+  to {width: 80%}
+}
+	.skill-items{
+		width: 80%;
+		height: 50%;
+		margin: 0 auto;
+		text-align: left;
+		color: #fff;
+		padding-top: 35px;
+	}
+	.skill-items p{
+		margin-left: 10px;
+	}
+	.skill, .revealOnScroll{
+		width:45%;
+		height:50px;
+		margin: 1% 0;
+		background-color: #e67e22;
+	}
+	.skill-left{
+		float: left;
+	}
+	.skill-right{
+		float: right;
+	}
+	.filling{
+		width: 80%;
+		height: 29px;
+		margin: 8px 0px 8px 9px;
+		padding: 6px 0px 0px 10px;
+		background-color:  #F4A13E;
+		animation-name: skills;
+		animation-duration: 4s;
+	}
+/* experiences section */
+	.experience-item{
+	    height: 137px;
+	    width: 100%;
+	}
+	.left{
+		width: 45%;
+		padding-right: 2%;
+		float: left;
+		text-align: right;
+		display: inline;
+	}
+	.right{
+		width: 47.5%;
+		padding-left: 2%;
+		text-align: left;
+		float: right;
+		display: inline;
+	}
+	.experience-icon{
+		float: left;
+		display: inline;
+		width: 50px;
+		height: auto;
+	}
+	.experience-icon-r{
+		float: left;
+		display: inline;
+		margin-left: 47%;
+		width: 50px;
+		height: auto;
+	}
+/* contact section */
+#contact{
+	height: 73vh;
+	}
+	form {
+	    width: 100%;
+	    margin-bottom: 10px;
+	}
+	input, textarea{
+		width: 60%;
+		height: 55px;
+		border: none;
+		font-size: 15px;  
+		display: block;
+		margin-left: 20%;
+		padding-left: 20px;
+		outline: none;
+		border-bottom: 1px solid #b2b2b2;
+	}
+	textarea{
+		padding-top: 35px;
+	}
+		.form-btn{
+			height: 40px;
+			width: 20%;
+			margin-top: 25px;
+			background-color: #F4A13E; 
+			color: #fff;
+			text-transform: uppercase;
+			margin-left: 40%;
+			border: none;
+		}
+.feedback{
+	padding: 15px;
+	background-color: #f3f3f3;
+	margin: 0 auto;
+	display: none;
+	width: 50%;
+}
+.wrong-input{
+	border-bottom: 1px solid #c0392b;
+}
+.completed-input{
+	border-bottom: 1px solid #27ae60;
+}
+/* footer section */
+.footer-text{
+	padding-top: 4px;
+}
+/* css lightbox */  
+.lightbox {   
+   opacity: 0;/* Hide the lightbox */
+   position: fixed;
+   z-index: 9999;
+   width: 100%;
+   height: 100vh;
+   top: -100%;
+   left: 0;
+   color:#333333;
+   -webkit-transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -o-transition: opacity .5s ease-in-out;
+   transition: opacity .5s ease-in-out;
+   }
+.lightbox:target {	/** Show lightbox when it is target */
+   opacity: 1;
+   outline: none;
+   top: 0;   
+   background-color: rgba(0, 0, 0, 0.7);
+	}
+.box {
+	width: -webkit-min-content;
+	width: -moz-min-content;
+	width: min-content;
+	width:	700px;
+	height: 500px;
+	margin: 15vh auto;
+	box-shadow: 0px 1px 26px -3px #777777;
+	background-repeat: no-repeat;
+	}
+.box-albertslow{
+	background-image: url("../images/albertslow.jpg");
+ 	}
+.box-test{
+	background-image: url("../images/amanda.jpg");
+}
+.content {
+	opacity:0;
+	margin-top: 5px;
+	display:block;
+	position:relative;
+	height: 500px;
+   	}
+.content:hover{
+	opacity: 1;
+	}
+.lightbox-text{
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #bdc3c7;
+	width:	700px;
+	position: absolute;
+	bottom: 0;
+	padding: 15px 0;
+	}
+.close {
+   display:block;
+   float:right;
+   text-decoration:none;
+   font-size:20px;
+   color:#bdc3c7;
+   margin: 5px 10px;
+   }
+.clear {
+   display:block;
+   clear:both;
+   }
+.prev, .next{
+	color: #bdc3c7;
+	text-decoration: none;
+	font-size:25px;
+	margin: 35% -30%;
+	}
+.prev {
+   float:left;
+   }
+.next{
+   float:right;
+   }
